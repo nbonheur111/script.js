@@ -452,6 +452,28 @@ user.friend.purchased.forEach(item => {
     console.log(item);   
 });
 
+console.log(user)
+
+//G. Functions can operate ob objects
+ //1 - 3 function updateUser
+
+ const updateUser = () => {
+    user.age+=1;
+    user.name = user.name.toLocaleUpperCase();
+ }
+ updateUser();
+ console.log(user);
+
+ //2. function oldAndLoud
+
+ const oldAndOut = (person) =>{
+    person.age += 1;
+    person.name = person.name.toLocaleUpperCase();
+
+ }
+ oldAndOut(user);
+ console.log(user);
+
 
 
 
