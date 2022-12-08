@@ -22,19 +22,21 @@ pseudocodes cannot be run by a compiler.
 6. 50%
 */
 
-// B Strings
+// B Strings 1-7
 
 let firstVariable = "Hello World";
 firstVariable = 69;
 
 let secondVariable = firstVariable;
-secondVariable = "not today";
-
-console.log(firstVariable); // 69
+secondVariable = "See you";
+console.log(firstVariable);
 
 let yourName = "Bonheur";
-let greetings = "Hello, my name is "+yourName;
-console.log(greetings);
+
+const greetings = (yourName) => {
+   return `hello, my name is ${yourName}`;
+}
+console.log(greetings("Bonheur"));
 
 //C. Booleans
 
